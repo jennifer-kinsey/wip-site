@@ -1,0 +1,49 @@
+/*.upper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 140px;
+  left: 0;
+}*/
+
+nav.navbar {
+  background-color: yellow;
+  border: 0;
+  margin-bottom: 0;
+}
+
+nav a {
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.intro-text{
+  position: absolute;
+  bottom: 200px;
+  left: 10%;
+  width: 100%;
+  color: white;
+}
+
+.centered {
+  text-align: center;
+}
+
+.contact, .form-control {
+  background-color: black;
+  color: white;
+}
+
+.contact h1 {
+  text-align: center;
+  color: yellow;
+}
