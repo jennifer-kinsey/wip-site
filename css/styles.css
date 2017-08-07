@@ -6,6 +6,16 @@
   left: 0;
 }*/
 
+/*fonts*/
+nav, .upper, .about h3, .col-md-6 p, .form-group{
+  font-family: 'courier new';
+}
+
+h1.intro-text, h1.specificity, h2.specificity {
+  font-family: 'open sans', sans-serif;
+}
+
+
 nav.navbar {
   background-color: yellow;
   border: 0;
