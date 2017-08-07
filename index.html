@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Jennifer Kinsey</title>
   </head>
 
   <body>
     <div class="header">
       <div class="upper">
-        <h2>hi. i'm kinsey. white space here.</h2>
+        <h2>hi! welcome.</h2>
       </div>
       <nav class="navbar">
         <div class="container-fluid">
@@ -27,16 +29,16 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">dev@kinsey.tech</a></li>
               <li><a href="#">3863340333</a></li>
-              <li><a href="#">linkedin</a></li>
-              <li><a href="#">github</a></li>
+              <a href="https://www.linkedin.com/in/jenniferkinsey/"><i class="fa fa-linkedin-square fa-3x icons" aria-hidden="true"></i></a>
+              <a href="https://github.com/jennifer-kinsey/"><i class="fa fa-github-alt fa-3x icons" aria-hidden="true"></i></a>
             </ul>
           </div>
         </div>
@@ -44,47 +46,48 @@
     </div>
     <div class="image">
       <img src="img/sunset.jpeg" alt="beautiful sunset">
-      <h1 class="intro-text">i'm kinsey. an awesome developer you should hire.</h1>
+      <h1 class="intro-text">i'm kinsey. an awesome developer and a rad person</h1>
+      <h1 class="intro-text2">you should hire.</h1>
     </div>
-    <div class="about centered">
+    <div class="about centered" id="about">
       <h1 class="specificity">A BIT ABOUT ME</h1>
-      <h2 class="specificity">Subtitle</h2>
-      <h3>Shabby chic sustainable pork belly semiotics glossier. Chia mumblecore cloud bread heirloom. Godard forage organic biodiesel selfies. Taxidermy marfa cray, normcore food truck mumblecore squid affogato brooklyn. Green juice chambray put a bird on it adaptogen cornhole bitters lumbersexual. Fingerstache polaroid chartreuse listicle, copper mug air plant +1. Trust fund flexitarian humblebrag, ugh bitters pabst vape chicharrones tilde vinyl seitan pug bicycle rights. Messenger bag vegan literally master cleanse bespoke bitters, meh flannel locavore. Literally actually woke kickstarter cliche. Mixtape poke jean shorts blue bottle distillery godard portland. Hoodie green juice four loko waistcoat cronut franzen celiac cloud bread leggings. Normcore celiac stumptown typewriter lyft. Forage venmo adaptogen, celiac pabst twee affogato vice taiyaki swag. Green juice franzen bitters, master cleanse ugh gastropub adaptogen umami cardigan vinyl biodiesel.</h3>
+      <h3 class="specificity">A <img src="img/logo-ruby.png" alt="ruby" class="ruby"> in the Rough</h3>
+      <h3>I’ve been on a career change trek from social services to developer over the last few years. I've always had an interested in STEM fields and dabbled in programming for years. Recently, I've buckled down and learned Ruby on Rails and haven't looked back. You can check out my Github, see my LinkedIn, message me on here for career propositions, or find me at a meetup in downtown Portland learning about new tech.</h3>
     </div>
     <div class="image">
       <img src="img/typing.jpeg" alt="lady working on laptop with cappucino">
       <h1 class="intro-text">PAST WORK</h1>
     </div>
-    <div class="work">
+    <div class="work" id="projects">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 space">
           <h2 class="specificity">TomKaneArt.com</h2>
           <p>Yuccie you probably haven't heard of them letterpress farm-to-table raclette. Readymade brooklyn bespoke vape chillwave forage, portland craft beer bitters adaptogen mumblecore beard. Succulents pabst four loko etsy. Lyft VHS four dollar toast air plant everyday carry.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 space">
           <img src="img/tomkane.png" alt="">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 space">
           <img src="img/tomkane.png" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 space">
           <h2 class="specificity">TomKaneArt.com</h2>
           <p>Yuccie you probably haven't heard of them letterpress farm-to-table raclette. Readymade brooklyn bespoke vape chillwave forage, portland craft beer bitters adaptogen mumblecore beard. Succulents pabst four loko etsy. Lyft VHS four dollar toast air plant everyday carry.</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 space">
           <h2 class="specificity">TomKaneArt.com</h2>
           <p>Yuccie you probably haven't heard of them letterpress farm-to-table raclette. Readymade brooklyn bespoke vape chillwave forage, portland craft beer bitters adaptogen mumblecore beard. Succulents pabst four loko etsy. Lyft VHS four dollar toast air plant everyday carry.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 space">
           <img src="img/tomkane.png" alt="">
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div id="map"></div>
       <script>
         function initMap() {
@@ -120,6 +123,7 @@
           <div class="form-group">
             <textarea class="form-control override" rows="4" placeholder="What's up?"></textarea>
           </div>
+          <button type="button" class="send" name="button">Send</button>
         </form>
       </div>
     </div>

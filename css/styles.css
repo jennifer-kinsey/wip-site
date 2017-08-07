@@ -7,12 +7,16 @@
 }*/
 
 /*fonts*/
-nav, .upper, .about h3, .col-md-6 p, .form-group{
+nav, .upper, .about h3, .col-md-6 p, .form-group, button.send{
   font-family: 'courier new';
 }
 
 h1.intro-text, h1.specificity, h2.specificity {
-  font-family: 'open sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+  background-color: yellow;
 }
 
 
@@ -25,6 +29,17 @@ nav.navbar {
 nav a {
   color: black;
 }
+
+
+nav li:hover {
+  background-color: orange;
+}
+
+i.fa.fa-linkedin-square.fa-3x.icons {
+  margin-top: 4px;
+}
+
+
 
 img {
   width: 100%;
@@ -42,6 +57,17 @@ img {
   left: 10%;
   width: 100%;
   color: white;
+}
+.intro-text2{
+  position: absolute;
+  bottom: 159px;
+  left: 13%;
+  width: 100%;
+  color: white;
+}
+
+.ruby{
+  width: 30px;
 }
 
 .centered {
@@ -61,10 +87,30 @@ img {
   color: yellow;
 }
 
+.col-md-6.space{
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-6.space h2, .col-md-6.space p {
+  padding: 0 20px;
+}
+
 #map {
   height: 400px;
   width: 65%;
   background-color: black;
   display: block;
   margin: 0 auto;
+}
+
+button.send {
+  background-color: yellow;
+  display: block;
+  margin: 0 auto;
+  color: black;
+  width: 10em;
+  /*height: 5em;*/
+  border: 0;
+  font-size: 2em;
 }
