@@ -38,7 +38,10 @@ img {
   text-align: center;
 }
 
-.contact, .form-control {
+.contact {
+  padding: 2.5em;
+}
+.contact, .form-control.override {
   background-color: black;
   color: white;
 }
@@ -46,4 +49,12 @@ img {
 .contact h1 {
   text-align: center;
   color: yellow;
+}
+
+#map {
+  height: 400px;
+  width: 65%;
+  background-color: black;
+  display: block;
+  margin: 0 auto;
 }
