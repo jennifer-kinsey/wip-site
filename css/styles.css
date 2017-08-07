@@ -1,17 +1,9 @@
-/*.upper {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  height: 140px;
-  left: 0;
-}*/
-
 /*fonts*/
-nav, .upper, .about h3, .col-md-6 p, .form-group, button.send{
+nav, .upper, .about h3, .col-md-6 p, .form-group, button.send, .col-md-6.space h3{
   font-family: 'courier new';
 }
 
-h1.intro-text, h1.specificity, h2.specificity {
+h1.intro-text, h1.specificity, h2.specificity, i a {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -39,16 +31,38 @@ i.fa.fa-linkedin-square.fa-3x.icons {
   margin-top: 4px;
 }
 
-
-
 img {
   width: 100%;
   height: auto;
 }
 
+.name {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: rgba(255,255,0, .9);
+  color: black;
+  font-size: 1.5em;
+}
+
+i a, i a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .image {
   position: relative;
   width: 100%;
+}
+
+.work-text{
+  position: absolute;
+  font-size: 6em;
+  top: 200px;
+  left: 10%;
+  width: 100%;
+  color: white;
 }
 
 .intro-text{
@@ -66,8 +80,17 @@ img {
   color: white;
 }
 
-.ruby{
+.ruby {
   width: 30px;
+}
+
+#logo-container {
+  padding: 7.5px;
+}
+
+.brand {
+  height: 36px;
+  width: auto;
 }
 
 .centered {
@@ -92,7 +115,7 @@ img {
   padding: 0;
 }
 
-.col-md-6.space h2, .col-md-6.space p {
+.col-md-6.space h2, .col-md-6.space h3, .col-md-6.space i {
   padding: 0 20px;
 }
 
