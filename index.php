@@ -1,3 +1,45 @@
+<?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+		$from = 'Contact Form';
+		$to = 'dev@kinsey.tech';
+
+		$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+
+    //Check if subject has been entered
+    if (!$_POST['message']) {
+      $errSubject = 'Please enter a subject';
+    }
+
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter a message';
+		}
+
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
+	if (mail ($to, $subject, $body, $from)) {
+		$result='<div class="alert alert-success">Thank You! I will be in touch. ;-)</div>';
+	} else {
+		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later. Or email me directly: dev@kinsey.tech </div>';
+	}
+}
+	}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -62,36 +104,36 @@
     </div>
     <div class="work" id="projects">
       <div class="row">
-        <div class="col-md-6 space">
+        <div class="col-sm-6 space">
           <h2 class="specificity">TomKaneArt.com</h2>
           <h3>A freelance project for a local painter, artfully displaying his work and allowing customers to purchase his art.</h3>
           <h3>This Rails app was a team project utilizing user authentication and authorization, Stripe integration, image uploads, mail gun for email confirmations, and AWS for image hosting.</h3>
           <i class="fa fa-external-link fa-lg"><a href="http://www.tomkaneart.com/" target="_blank">&ensp; It's online</a></i><br>
           <i class="fa fa-github fa-lg"><a href="https://github.com/akane0915/tom-kane-art-website" target="_blank">&ensp; It's on Github</a></i>
         </div>
-        <div class="col-md-6 space">
+        <div class="col-sm-6 space">
           <img src="img/tomkane.png" alt="abstract painting">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 space">
+        <div class="col-sm-6 space">
           <img src="img/api.jpeg" alt="screen of minified code">
         </div>
-        <div class="col-md-6 space">
+        <div class="col-sm-6 space">
           <h2 class="specificity">National Park API</h2>
           <h3>This is an API that includes seeds Faker data for National Parks. It includes multiple scopes for querying and thorough testing. It includes Authentication using Devise and JWT tokens and Versioning.</h3>
           <i class="fa fa-github fa-lg"><a href="https://github.com/jennifer-kinsey/national-park-api">&ensp; It's on Github</a></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 space">
+        <div class="col-sm-6 space">
           <h2 class="specificity">Career Quest</h2>
           <h3>This is an application for organizing your job search. Users can create unique accounts, and store and access data for all things job-related in their career quest - like what company you've applied to, who you've corresponded with, what positions you applied to, and status as you move through the hiring process.</h3>
           <h3> Ruby app on the lightweight Sinatra framework. Uses a fairly complex schema for a quick team week project. </h3>
           <i class="fa fa-external-link fa-lg"><a href="http://career-quest.herokuapp.com/" target="_blank">&ensp; It's online</a></i><br>
           <i class="fa fa-github fa-lg"><a href="https://github.com/jennifer-kinsey/career-quest" target="_blank">&ensp; It's on Github</a></i>
         </div>
-        <div class="col-md-6 space">
+        <div class="col-sm-6 space">
           <img src="img/careerquest.png" alt="">
         </div>
       </div>
@@ -116,23 +158,27 @@
       </script>
       <div class="form-area">
         <h1 class="specificity">CONTACT ME</h1>
-        <form class="contact-form" action="index.html" method="post">
+        <form class="contact-form" role="form" action="index.php" method="post">
           <div class="form-group">
-            <input type="text" class="form-control override" placeholder="Name">
+            <input type="text" id="name" name="name" class="form-control override" value="<?php echo htmlspecialchars($_POST['name']); ?>" placeholder="Name">
+            <?php echo "<p class='text-danger'>$errName</p>";?>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control override" placeholder="Email">
+            <input type="email" id="email" name="email" class="form-control override" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <?php echo "<p class='text-danger'>$errEmail</p>";?>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control override" placeholder="Phone">
+            <input type="text" id="subject" name="subject" class="form-control override" placeholder="Subject" value="<?php echo htmlspecialchars($_POST['subject']); ?>">
+            <?php echo "<p class='text-danger'>$errSubject</p>";?>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control override" placeholder="Subject">
+            <textarea id="subject" name="message" class="form-control override" rows="4" placeholder="What's up?" value="<?php echo htmlspecialchars($_POST['message']); ?>"></textarea>
+            <?php echo "<p class='text-danger'>$errMessage</p>";?>
           </div>
           <div class="form-group">
-            <textarea class="form-control override" rows="4" placeholder="What's up?"></textarea>
+            <?php echo $result; ?>
           </div>
-          <button type="button" class="send" name="button">Send</button>
+          <button type="submit" name="submit" id="submit" name="button">Send</button>
         </form>
       </div>
     </div>

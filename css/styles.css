@@ -127,7 +127,7 @@ i a, i a:hover {
   margin: 0 auto;
 }
 
-button.send {
+button#submit {
   background-color: yellow;
   display: block;
   margin: 0 auto;
