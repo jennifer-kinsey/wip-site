@@ -11,12 +11,11 @@ h1.intro-text, h1.specificity, h2.specificity, i a {
 
 body {
   margin: 0;
-  padding-top: 50px;
 }
 
 .upper {
-  height: 200px;
-  padding-top: 50px;
+  height: 36px;
+  padding-top: 0px;
   top: 0;
   width: 100%;
 }
@@ -46,6 +45,10 @@ nav a {
 
 #bs-example-navbar-collapse-1 > ul > li > a:hover {
   background-color: yellow;
+}
+
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > a > i:hover {
+
 }
 
 nav li:hover {
@@ -85,29 +88,37 @@ i a, i a:hover {
   width: 100%;
 }
 
+.left-text {
+  padding-left: 25px;
+}
+
 .work-text{
   position: absolute;
-  font-size: 6em;
-  top: 200px;
+  font-size: 5em;
+  top: 10%;
   left: 10%;
   width: 100%;
   color: white;
 }
 
-.intro-text{
+.intro-text {
   position: absolute;
-  bottom: 200px;
+  bottom: 20%;
   left: 10%;
-  width: 100%;
+  max-width: 80%;
   color: white;
 }
-.intro-text2{
-  position: absolute;
-  bottom: 159px;
-  left: 13%;
-  width: 100%;
-  color: white;
+
+@media all and (max-width: 599px) {
+  .intro-text, .upper h2 {
+    font-size: 18px;
+    bottom: 0%;
+  },
+  #map {
+    height: 200px;
+  }
 }
+
 
 .ruby {
   width: 30px;
@@ -140,8 +151,8 @@ i a, i a:hover {
 }
 
 .col-md-6.space{
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .col-md-6.space h2, .col-md-6.space h3, .col-md-6.space i {

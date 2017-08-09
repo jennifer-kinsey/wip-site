@@ -92,8 +92,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
     <div class="main-content">
       <div class="image">
         <img src="img/sunset.jpeg" alt="beautiful sunset">
-        <h1 class="intro-text">i'm <span class="highlight"> kinsey.</span> an awesome developer and a rad person</h1>
-        <h1 class="intro-text2">you should hire.</h1>
+        <h1 class="intro-text">i'm <span class="highlight"> kinsey.</span> an awesome developer and a rad person <br>&nbsp;&nbsp;you should hire.</h1>
       </div>
       <div class="about centered" id="about">
         <h1 class="specificity">A BIT ABOUT ME</h1>
@@ -108,7 +107,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
       </div>
       <div class="work" id="projects">
         <div class="row">
-          <div class="col-sm-6 space">
+          <div class="col-sm-6 space left-text">
             <h2 class="specificity">TomKaneArt.com</h2>
             <h3>A freelance project for a local painter, artfully displaying his work and allowing customers to purchase his art.</h3>
             <h3>This Rails app was a team project utilizing user authentication and authorization, Stripe integration, image uploads, mail gun for email confirmations, and AWS for image hosting.</h3>
@@ -130,7 +129,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 space">
+          <div class="col-sm-6 space left-text">
             <h2 class="specificity">Career Quest</h2>
             <h3>This is an application for organizing your job search. Users can create unique accounts, and store and access data for all things job-related in their career quest - like what company you've applied to, who you've corresponded with, what positions you applied to, and status as you move through the hiring process.</h3>
             <h3> Ruby app on the lightweight Sinatra framework. Uses a fairly complex schema for a quick team week project. </h3>
