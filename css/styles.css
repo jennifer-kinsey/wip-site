@@ -1,3 +1,5 @@
+
+
 /*fonts*/
 nav, .upper, .about h3, .col-md-6 p, .form-group, button.send, .col-md-6.space h3{
   font-family: 'courier new';
@@ -7,21 +9,44 @@ h1.intro-text, h1.specificity, h2.specificity, i a {
   font-family: 'Open Sans', sans-serif;
 }
 
-::selection {
-  background-color: yellow;
+body {
+  margin: 0;
+  padding-top: 50px;
 }
 
+.upper {
+  height: 200px;
+  padding-top: 50px;
+  top: 0;
+  width: 100%;
+}
 
-nav.navbar {
+.main-nav-scrolled {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+}
+
+nav.navbar.main-nav, .main-content {
+  position: relative;
+}
+
+nav.navbar.main-nav {
   background-color: yellow;
   border: 0;
-  margin-bottom: 0;
+  height: 80px;
+  z-index: 150;
+  margin-bottom: -80px;
+  box-shadow:  0 2px 3px rgba(0, 0, 0, .4);
 }
 
 nav a {
   color: black;
 }
 
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+  background-color: yellow;
+}
 
 nav li:hover {
   background-color: orange;
@@ -29,6 +54,10 @@ nav li:hover {
 
 i.fa.fa-linkedin-square.fa-3x.icons {
   margin-top: 4px;
+}
+
+::selection {
+  background-color: yellow;
 }
 
 img {
