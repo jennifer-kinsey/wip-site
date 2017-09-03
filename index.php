@@ -68,7 +68,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" id="logo-container" href="#"><img src="img/brand.png" alt="K logo" class="brand"></a>
+            <a class="navbar-brand" id="logo-container" href="#"><img src="img/Optimized-brand.png" alt="K logo" class="brand"></a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -97,12 +97,12 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
       <div class="about centered" id="about">
         <h1 class="specificity">A BIT ABOUT ME</h1>
         <h3 class="specificity">A <img src="img/logo-ruby.png" alt="ruby" class="ruby"> in the Rough</h3>
-        <h3>I’ve been on a career change trek from social services to developer over the last few years. I've always had an interested in STEM fields and dabbled in programming for years. Recently, I've buckled down and learned Ruby on Rails and haven't looked back. You can check out my Github, see my LinkedIn, message me on here for career propositions, or find me at a meetup in downtown Portland learning about new tech.</h3>
+        <h3>I’ve been on a career change trek from social services to developer over the last few years. I've always had an interest in STEM fields and dabbled in programming for years. Recently, I've buckled down and learned Ruby on Rails and haven't looked back. You can check out my Github, see my LinkedIn, message me on here for career propositions, or find me at a meetup in downtown Portland learning about new tech.</h3>
 
         <h3>When not doing code, I am probably watching scifi/fantasy with my two old cats, pretending to be a runner, listening to 80s music, or cooking something up from the local farmer's market.</h3>
       </div>
       <div class="image">
-        <img src="img/typing.jpeg" alt="lady working on laptop with cappucino">
+        <img src="img/Optimized-typing.jpeg" alt="lady working on laptop with cappucino">
         <h1 class="work-text">PAST WORK</h1>
       </div>
       <div class="work" id="projects">
@@ -114,13 +114,13 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
             <i class="fa fa-external-link fa-lg"><a href="http://www.tomkaneart.com/" target="_blank">&ensp; It's online</a></i><br>
             <i class="fa fa-github fa-lg"><a href="https://github.com/akane0915/tom-kane-art-website" target="_blank">&ensp; It's on Github</a></i>
           </div>
-          <div class="col-sm-6 space">
-            <img src="img/tomkane.png" alt="abstract painting">
+          <div class="col-sm-6 space right-pic">
+            <img src="img/Optimized-tomkane.jpg" alt="abstract painting">
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 space">
-            <img src="img/api.jpeg" alt="screen of minified code">
+          <div class="col-sm-6 space left-pic">
+            <img src="img/Optimized-api.jpeg" alt="screen of minified code">
           </div>
           <div class="col-sm-6 space">
             <h2 class="specificity">National Park API</h2>
@@ -136,7 +136,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
             <i class="fa fa-external-link fa-lg"><a href="http://career-quest.herokuapp.com/" target="_blank">&ensp; It's online</a></i><br>
             <i class="fa fa-github fa-lg"><a href="https://github.com/jennifer-kinsey/career-quest" target="_blank">&ensp; It's on Github</a></i>
           </div>
-          <div class="col-sm-6 space">
+          <div class="col-sm-6 space right-pic">
             <img src="img/careerquest.png" alt="">
           </div>
         </div>

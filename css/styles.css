@@ -9,6 +9,7 @@ h1.intro-text, h1.specificity, h2.specificity, i a {
   font-family: 'Open Sans', sans-serif;
 }
 
+
 body {
   margin: 0;
 }
@@ -90,6 +91,7 @@ i a, i a:hover {
 
 .left-text {
   padding-left: 25px;
+  padding-right:  0;
 }
 
 .work-text{
@@ -159,6 +161,15 @@ i a, i a:hover {
   padding: 0 20px;
 }
 
+.col-sm-6.space.right-pic {
+  padding-left: 0;
+}
+
+
+.col-sm-6.space.left-pic {
+  padding-right: 0;
+}
+
 #map {
   height: 400px;
   width: 65%;
@@ -176,4 +187,8 @@ button#submit {
   /*height: 5em;*/
   border: 0;
   font-size: 2em;
+}
+
+.col-sm-6 .space .left-text {
+  padding-right: 0;
 }
