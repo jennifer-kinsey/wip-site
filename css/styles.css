@@ -89,6 +89,10 @@ i a, i a:hover {
   width: 100%;
 }
 
+.profile {
+  width: 18%;
+}
+
 .left-text {
   padding-left: 25px;
   padding-right:  0;
