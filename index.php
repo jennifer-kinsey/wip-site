@@ -81,7 +81,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
 
             <ul class="nav navbar-nav navbar-right">
               <li><a href="https://medium.com/@kinsey" target="_blank">Blog</a></li>
-              <li><a href="https://docs.google.com/document/d/1R8U1Ela1JHKOvpcUrqj_TyIbkg0vBB5FkpZhWVmVtz4/edit#heading=h.5rf9wr4r3no2" target="_blank">Resume</a></li>
+              <li><a href="https://docs.google.com/document/d/1XXmb47SXEwfDZmhg88oVyGQS5pXvk2ryJqrnMRKbJIQ/edit?usp=sharing" target="_blank">Resume</a></li>
               <a href="https://www.linkedin.com/in/jenniferkinsey/" target="_blank"><i class="fa fa-linkedin-square fa-3x icons" aria-hidden="true"></i></a>
               <a href="https://github.com/jennifer-kinsey/" target="_blank"><i class="fa fa-github-alt fa-3x icons" aria-hidden="true"></i></a>
             </ul>
@@ -97,6 +97,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errSubject) {
       <div class="about centered" id="about">
         <h1 class="specificity">A BIT ABOUT ME</h1>
         <h3 class="specificity">A <img src="img/logo-ruby.png" alt="ruby" class="ruby"> in the Rough</h3>
+				<img class="profile" src="profile.jpg" alt="a great, budding developer named Kinsey">
         <h3>I’ve been on a career change trek from social services to developer over the last few years. I've always had an interest in STEM fields and dabbled in programming for years. Recently, I've buckled down and learned Ruby on Rails and haven't looked back. You can check out my Github, see my LinkedIn, message me on here for career propositions, or find me at a meetup in downtown Portland learning about new tech.</h3>
 
         <h3>When not doing code, I am probably watching scifi/fantasy with my two old cats, pretending to be a runner, listening to 80s music, or cooking something up from the local farmer's market.</h3>
